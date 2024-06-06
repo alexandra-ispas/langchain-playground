@@ -25,4 +25,5 @@ chain = prompt | llm
 
 # response = chain.invoke({"subject": "corporations"})
 response = chain.invoke({"input": "tomatoes"})
-print(response)
+print(type(response)) # it has type AIMessage
+print(type(response.content)) # it has type AIMessage
